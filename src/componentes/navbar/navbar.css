@@ -1,0 +1,29 @@
+.navcontainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  min-height: 10vh;
+  align-items: center;
+}
+
+img {
+  max-width: 2.5rem;
+  height: 2rem;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}

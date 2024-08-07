@@ -1,0 +1,6 @@
+.cartas {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  justify-content: space-evenly;
+}
