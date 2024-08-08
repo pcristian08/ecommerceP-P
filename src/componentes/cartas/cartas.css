@@ -1,0 +1,65 @@
+/* Cartas.css */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que el contenido no sobresalga del borde */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Eleva la tarjeta al pasar el cursor */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+}
+
+.card-media {
+  height: 250px; /* Ajusta este valor según tus necesidades */
+  background-size: cover; /* Asegura que la imagen cubra el área del card media */
+  background-position: center; /* Centra la imagen en el card media */
+  object-fit: cover;
+}
+
+.card-content {
+  flex: 1;
+  padding: 16px; /* Añade relleno para un mejor espaciado */
+}
+
+.card-title {
+  margin-bottom: 8px;
+  font-size: 1.25rem; /* Tamaño de fuente más grande para el título */
+  font-weight: bold; /* Negrita para destacar el título */
+}
+
+.card-description {
+  margin-bottom: 8px;
+  color: #666; /* Color de texto más claro para la descripción */
+}
+
+.card-price {
+  margin-bottom: 16px;
+  font-size: 1.125rem; /* Tamaño de fuente para el precio */
+  font-weight: bold; /* Negrita para el precio */
+}
+
+.card-actions {
+  display: flex;
+  justify-content: center;
+  padding: 16px; /* Añade relleno para el área de acciones */
+}
+
+.card-button {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none;
+  border-radius: 4px; /* Bordes redondeados en el botón */
+  padding: 10px 20px; /* Espaciado del botón */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.card-button:hover {
+  background-color: #0056b3; /* Color más oscuro cuando se pasa el cursor */
+}
