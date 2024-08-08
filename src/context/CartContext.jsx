@@ -54,7 +54,7 @@ const CartContextProvider = ({ children }) => {
 
   const getQuantityById = (id) => {
     if (!Array.isArray(cart)) {
-      console.error("cart is not an array:", cart);
+      console.error("cart no es un array:", cart);
       return 1;
     }
     return cart.find((products) => products.id === id)?.quantity ?? 1;
@@ -62,7 +62,7 @@ const CartContextProvider = ({ children }) => {
 
   const getTotalPrice = () => {
     if (!Array.isArray(cart)) {
-      console.error("cart is not an array:", cart);
+      console.error("cart no es un array:", cart);
       return 0;
     }
     return cart.reduce((acumulator, element) => {
@@ -72,7 +72,7 @@ const CartContextProvider = ({ children }) => {
 
   const getTotalItems = () => {
     if (!Array.isArray(cart)) {
-      console.error("cart is not an array:", cart);
+      console.error("cart no es un array:", cart);
       return 0;
     }
     return cart.reduce((acc, element) => {
