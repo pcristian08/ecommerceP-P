@@ -1,15 +1,19 @@
 import { useState } from "react";
 import { Counter } from "./Counter";
+import Swal from "sweetalert2";
 
 export const CounterContainer = ({ onAdd, stock, initialQuantity = 1 }) => {
-  //Un estado es como una variable pero que recuerda su valor anterior
   const [contador, setContador] = useState(initialQuantity);
 
   const restar = () => {
     if (contador > 1) {
       setContador(contador - 1);
     } else {
-      alert("Minimo");
+      Swal.fire({
+        icon: "warning",
+        title: "Mínimo alcanzado",
+        text: "No puedes reducir más la cantidad.",
+      });
     }
   };
 
@@ -17,7 +21,11 @@ export const CounterContainer = ({ onAdd, stock, initialQuantity = 1 }) => {
     if (contador < stock) {
       setContador(contador + 1);
     } else {
-      alert("Stock máximo:");
+      Swal.fire({
+        icon: "error",
+        title: "Stock máximo alcanzado",
+        text: `Solo puedes agregar hasta ${stock} unidades.`,
+      });
     }
   };
 
