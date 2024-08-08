@@ -1,0 +1,57 @@
+.containerItemDetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Centrando horizontalmente la tarjeta */
+  padding: 20px;
+  background-color: #fff;
+  max-width: 800px;
+  width: 100%; /* Asegura que la tarjeta no exceda el tamaño máximo */
+}
+
+.containerImg {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.containerImg img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.containerDetail {
+  flex: 2;
+}
+
+.containerDetail h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.containerDetail h2 span {
+  font-weight: bold;
+  color: #555;
+}
+
+.counterContainer {
+  margin-top: 20px;
+}
+
+.counterContainer button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.counterContainer button:hover {
+  background-color: #0056b3;
+}
